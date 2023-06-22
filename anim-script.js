@@ -43,8 +43,8 @@ function animate(){
     playerImage.src = state.sheetpath;
     let position = Math.floor(gameFrame/staggerFrames) % state.frames;
     ctx.drawImage(playerImage, position*state.width, 0, state.width, state.height, 0, 0, 600, 600);
-    requestAnimationFrame(animate);
     gameFrame++;
+    requestAnimationFrame(animate);
 };
 
 animate();
